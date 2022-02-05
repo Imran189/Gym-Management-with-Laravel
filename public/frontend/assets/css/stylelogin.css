@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+* {
+    font-family: Montserrat, sans-serif;
+}
+
+/*almost deafult to me*/
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+
+    background: #282c34;
+}
+
+login_box {
+    /*positioning*/
+    position: absolute;
+    /*centering absolute*/
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    /*sizing*/
+    height: 500px;
+    width: 750px;
+
+    /*decoration*/
+    background: #c9cdcb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+line {
+    position: absolute;
+    height: 450px;
+    width: 1200px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.line_sign_up {
+    left: 0px;
+}
+
+.line_sign_in {
+    left: -450px;
+}
+
+part_img {
+    /*positioning*/
+    position: relative;
+    float: left;
+
+    /*sizing*/
+    height: 100%;
+    width: 300px;
+
+    /*decoration*/
+    overflow: hidden;
+    background: #6943e8;
+}
+
+change {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    margin: 24px 16px auto 16px;
+    cursor: pointer;
+    font-size: 11px;
+    color: #cbd5cf;
+
+    transition: all 0.6s ease-in-out;
+}
+
+.change_left {
+    left: 0%;
+}
+
+.change_right {
+    left: 75%;
+}
+
+change:hover {
+    text-decoration: underline;
+}
+
+part_field {
+    /*positioning*/
+    position: relative;
+    float: left;
+    /*sizing*/
+    height: 100%;
+    width: 450px;
+
+    transition: all 1s ease;
+}
+
+content_login {
+    /*positioning*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    /*sizing*/
+    height: fit-content;
+    width: fit-content;
+}
+
+#content_up::before {
+    content: "Sign up";
+    /*position*/
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 32px;
+
+    /*sizing*/
+    height: fit-content;
+    width: 100%;
+
+    /*font*/
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#content_in::before {
+    content: "Sign in";
+    /*position*/
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 32px;
+
+    /*sizing*/
+    height: fit-content;
+    width: 100%;
+
+    /*font*/
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form > * {
+    display: block;
+}
+
+input {
+    /*position*/
+    margin-bottom: 24px;
+
+    /*sizing*/
+    height: 28px;
+    width: 300px;
+    box-sizing: border-box;
+
+    /*decoration*/
+    outline: none;
+
+    /*border*/
+    border: 0px;
+    border-bottom: 1px solid #a6b9ae;
+
+    /*animations and stuff*/
+    transition: all 0.5s ease;
+}
+input:focus {
+    border-bottom: 2px solid #6943e8;
+}
+
+lastline {
+    /*positioning*/
+    margin-top: 32px;
+
+    /*sizing*/
+    height: fit-content;
+    width: 100%;
+
+    /*font*/
+    font-size: 11px;
+}
+
+a {
+    cursor: pointer;
+    color: #6943e8;
+}
+
+forgot_box {
+    float: left;
+    margin-top: 22px;
+    font-size: 11px;
+}
+
+button {
+    /*postioning*/
+    float: right;
+    margin-top: 14px;
+
+    /*sizing*/
+    height: 32px;
+    width: 96px;
+
+    /*decoration*/
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+    border: 0;
+    border-radius: 2px;
+    background: #6943e8;
+
+    /*animation and stuff*/
+    transition: all 0.25s ease;
+}
+button:hover {
+    transform: scale(1.05);
+}
